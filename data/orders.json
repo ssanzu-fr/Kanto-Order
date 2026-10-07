@@ -1,0 +1,212 @@
+[
+  {
+    "order_number": "001",
+    "customer_name": "Maria Santos",
+    "items": [
+      {
+        "menu_item_id": "chicken_meal",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "buko_juice",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 155,
+      "status": "Paid"
+    },
+    "status": "Completed"
+  },
+  {
+    "order_number": "002",
+    "customer_name": "Juan Dela Cruz",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 2
+      },
+      {
+        "menu_item_id": "isaw",
+        "quantity": 3
+      }
+    ],
+    "payment": {
+      "amount": 145,
+      "status": "Paid"
+    },
+    "status": "Completed"
+  },
+  {
+    "order_number": "003",
+    "customer_name": "Mark Klevin Esitfoy",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "goto",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "pares",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "mami",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "chicken_meal",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 350,
+      "status": "Paid"
+    },
+    "status": "Preparing"
+  },
+  {
+    "order_number": "004",
+    "customer_name": "Tung Tung Tung Sahur",
+    "items": [
+      {
+        "menu_item_id": "chicken_meal",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "sago_gulaman",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 145,
+      "status": "Paid"
+    },
+    "status": "Completed"
+  },
+  {
+    "order_number": "005",
+    "customer_name": "De jesus",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "goto",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 85,
+      "status": "Paid"
+    },
+    "status": "Completed"
+  },
+  {
+    "order_number": "006",
+    "customer_name": "Mark",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "goto",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "mami",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "pares",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 230,
+      "status": "Paid"
+    },
+    "status": "Completed"
+  },
+  {
+    "order_number": "007",
+    "customer_name": "Mark",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "goto",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "mami",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 150,
+      "status": "Unpaid"
+    },
+    "status": "Pending Payment"
+  },
+  {
+    "order_number": "008",
+    "customer_name": "Marian",
+    "items": [
+      {
+        "menu_item_id": "buko_juice",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "fishball",
+        "quantity": 1
+      }
+    ],
+    "payment": {
+      "amount": 55,
+      "status": "Paid"
+    },
+    "status": "Preparing"
+  },
+  {
+    "order_number": "009",
+    "customer_name": "Estiguy",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 4
+      }
+    ],
+    "payment": {
+      "amount": 140,
+      "status": "Paid"
+    },
+    "status": "Confirmed"
+  },
+  {
+    "order_number": "010",
+    "customer_name": "MARK",
+    "items": [
+      {
+        "menu_item_id": "lugaw",
+        "quantity": 1
+      },
+      {
+        "menu_item_id": "goto",
+        "quantity": 2
+      }
+    ],
+    "payment": {
+      "amount": 135,
+      "status": "Unpaid"
+    },
+    "status": "Pending Payment"
+  }
+]
