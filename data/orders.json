@@ -205,8 +205,8 @@
     ],
     "payment": {
       "amount": 135,
-      "status": "Unpaid"
+      "status": "Paid"
     },
-    "status": "Pending Payment"
+    "status": "Confirmed"
   }
 ]

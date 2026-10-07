@@ -393,13 +393,23 @@ class OrderForm(ctk.CTkFrame):
         image_dir = os.path.join(
             os.path.dirname(os.path.dirname(__file__)),
             "assets",
-            "images",
-            "menu"
+            "images"
         )
 
-        for extension in ("png", "jpg", "jpeg"):
-            path = os.path.join(image_dir, f"{item_id}.{extension}")
-            if os.path.exists(path):
+        normalized_item_id = "".join(character for character in item_id.lower() if character.isalnum())
+        supported_extensions = {"", ".png", ".jpg", ".jpeg", ".webp"}
+
+        for filename in os.listdir(image_dir):
+            image_name, extension = os.path.splitext(filename)
+            normalized_image_name = "".join(
+                character for character in image_name.lower() if character.isalnum()
+            )
+            path = os.path.join(image_dir, filename)
+            if (
+                normalized_image_name == normalized_item_id
+                and extension.lower() in supported_extensions
+                and os.path.isfile(path)
+            ):
                 return path
         return None
 
