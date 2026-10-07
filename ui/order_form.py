@@ -107,6 +107,7 @@ class OrderForm(ctk.CTkFrame):
             font=get_font("body", FONT_SIZES["body"]),
             fg_color=COLORS["primary"],
             hover_color=COLORS["primary_hover"],
+            border_color=COLORS["text_dim"],
             text_color=COLORS["text"]
         )
         self.pay_now_radio.pack(side="left", padx=(SPACING["md"], 0))
@@ -119,6 +120,7 @@ class OrderForm(ctk.CTkFrame):
             font=get_font("body", FONT_SIZES["body"]),
             fg_color=COLORS["primary"],
             hover_color=COLORS["primary_hover"],
+            border_color=COLORS["text_dim"],
             text_color=COLORS["text"]
         )
         self.pay_later_radio.pack(side="left", padx=(SPACING["md"], 0))
@@ -130,7 +132,7 @@ class OrderForm(ctk.CTkFrame):
             font=get_font("body", FONT_SIZES["body"], "bold"),
             fg_color=COLORS["secondary"],
             hover_color=COLORS["secondary_hover"],
-            text_color=COLORS["text"],
+            text_color=COLORS["background"],
             command=self._show_menu_view
         )
         self.choose_food_btn.pack(fill="x", padx=SPACING["lg"], pady=(0, SPACING["md"]))

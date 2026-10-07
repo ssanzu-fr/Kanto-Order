@@ -28,7 +28,7 @@ class App(ctk.CTk):
         # Window configuration
         self.title("Kanto Orders")
         self.geometry(f"{self.WINDOW_WIDTH}x{self.WINDOW_HEIGHT}")
-        self.minsize(980, 700)
+        self.minsize(980, 640)
 
         # Set color theme
         ctk.set_appearance_mode("dark")
@@ -95,10 +95,6 @@ class App(ctk.CTk):
         self.header = Header(self)
         self.header.pack(fill="x", padx=0, pady=0)
 
-        # Receipt is packed BEFORE the main content so it keeps its full height.
-        self.receipt_view = ReceiptView(self)
-        self.receipt_view.pack(side="bottom", fill="x", padx=SPACING["lg"], pady=(0, SPACING["lg"]))
-
         # Main content area
         self.content_frame = ctk.CTkFrame(
             self,
@@ -126,6 +122,9 @@ class App(ctk.CTk):
         )
         self.order_list.grid(row=0, column=1, sticky="nsew")
 
+        # Bottom panel: Receipt
+        self.receipt_view = ReceiptView(self)
+        self.receipt_view.pack(fill="x", padx=SPACING["lg"], pady=(0, SPACING["lg"]))
 
     def _center_popup(self, popup: ctk.CTkToplevel, width: int, height: int) -> None:
         """Center a popup over the app window."""

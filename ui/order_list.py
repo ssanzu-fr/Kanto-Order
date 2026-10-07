@@ -245,7 +245,7 @@ class OrderList(ctk.CTkFrame):
                 font=get_font("body", FONT_SIZES["small"]),
                 fg_color=COLORS["success"],
                 hover_color=COLORS["success"],
-                text_color=COLORS["text"],
+                text_color=COLORS["background"],
                 command=lambda: self._mark_as_paid(order)
             )
         elif order.status == OrderStatus.CONFIRMED:
